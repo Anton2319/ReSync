@@ -1,0 +1,13 @@
+used command: test.py
+used command: test.py
+used command: test.py
+used command: weather.py
+used command: weather.py
+used command: agde.py
+used command: console.py
+used command: console.py
+used command: commands.py
+used command: commands.py
+used command: test.py
+used command: test.py
+used command: console.py

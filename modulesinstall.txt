@@ -1,0 +1,1562 @@
+Collecting webcolors
+  Downloading webcolors-1.11.1-py3-none-any.whl (9.9 kB)
+Installing collected packages: webcolors
+Successfully installed webcolors-1.11.1
+Collecting geopy
+  Downloading geopy-2.2.0-py3-none-any.whl (118 kB)
+Collecting geographiclib<2,>=1.49
+  Downloading geographiclib-1.52-py3-none-any.whl (38 kB)
+Installing collected packages: geographiclib, geopy
+Successfully installed geographiclib-1.52 geopy-2.2.0
+Collecting astral
+  Downloading astral-2.2-py2.py3-none-any.whl (30 kB)
+Collecting pytz
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+Installing collected packages: pytz, astral
+Successfully installed astral-2.2 pytz-2021.3
+Collecting zalgo_text
+  Downloading zalgo_text-0.6.tar.gz (2.4 kB)
+Building wheels for collected packages: zalgo-text
+  Building wheel for zalgo-text (setup.py): started
+  Building wheel for zalgo-text (setup.py): finished with status 'done'
+  Created wheel for zalgo-text: filename=zalgo_text-0.6-py3-none-any.whl size=2924 sha256=3a7e12e644b5e259605fe89a66f3e350b2583a14661e96ad86a67916a8453132
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/00/8a/36/de73b3576cb0f3f6e44216ad134c62b09ec32ef05848b21bc0
+Successfully built zalgo-text
+Installing collected packages: zalgo-text
+Successfully installed zalgo-text-0.6
+Collecting bs4
+  Downloading bs4-0.0.1.tar.gz (1.1 kB)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.10.0-py3-none-any.whl (97 kB)
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.3.1-py3-none-any.whl (37 kB)
+Building wheels for collected packages: bs4
+  Building wheel for bs4 (setup.py): started
+  Building wheel for bs4 (setup.py): finished with status 'done'
+  Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1271 sha256=af02faa42eaf74d7d641c24a2bf1e7946a4eb37f1d7cc76ce5aec7b6e986d1a4
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/73/2b/cb/099980278a0c9a3e57ff1a89875ec07bfa0b6fcbebb9a8cad3
+Successfully built bs4
+Installing collected packages: soupsieve, beautifulsoup4, bs4
+Successfully installed beautifulsoup4-4.10.0 bs4-0.0.1 soupsieve-2.3.1
+Collecting feedparser
+  Downloading feedparser-6.0.8-py3-none-any.whl (81 kB)
+Collecting sgmllib3k
+  Downloading sgmllib3k-1.0.0.tar.gz (5.8 kB)
+Building wheels for collected packages: sgmllib3k
+  Building wheel for sgmllib3k (setup.py): started
+  Building wheel for sgmllib3k (setup.py): finished with status 'done'
+  Created wheel for sgmllib3k: filename=sgmllib3k-1.0.0-py3-none-any.whl size=6065 sha256=76aefc511b272bdd283ba672c603159ac10bc13a101a8b08fdb018e9386de84f
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/65/7a/a7/78c287f64e401255dff4c13fdbc672fed5efbfd21c530114e1
+Successfully built sgmllib3k
+Installing collected packages: sgmllib3k, feedparser
+Successfully installed feedparser-6.0.8 sgmllib3k-1.0.0
+Collecting qrcode
+  Downloading qrcode-7.3.1.tar.gz (43 kB)
+Building wheels for collected packages: qrcode
+  Building wheel for qrcode (setup.py): started
+  Building wheel for qrcode (setup.py): finished with status 'done'
+  Created wheel for qrcode: filename=qrcode-7.3.1-py3-none-any.whl size=40401 sha256=9914b58837f577141fafcac798185d63b0407db8f32c63504a8fa8310e24b5e4
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/93/54/16/55cec87f8d902ed84b94ab8fdb7e89ae1158c06e130bc83b03
+Successfully built qrcode
+Installing collected packages: qrcode
+Successfully installed qrcode-7.3.1
+Collecting gTTS
+  Downloading gTTS-2.2.3-py3-none-any.whl (25 kB)
+Collecting six
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting requests
+  Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting click
+  Downloading click-8.0.3-py3-none-any.whl (97 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.8-py2.py3-none-any.whl (138 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.11-py3-none-any.whl (39 kB)
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, six, requests, click, gTTS
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.11 click-8.0.3 gTTS-2.2.3 idna-3.3 requests-2.27.1 six-1.16.0 urllib3-1.26.8
+Collecting pyaspeller
+  Downloading pyaspeller-0.2.3-py3-none-any.whl (12 kB)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Installing collected packages: pyaspeller
+Successfully installed pyaspeller-0.2.3
+Collecting pydub
+  Downloading pydub-0.25.1-py2.py3-none-any.whl (32 kB)
+Installing collected packages: pydub
+Successfully installed pydub-0.25.1
+Collecting html2text
+  Downloading html2text-2020.1.16-py3-none-any.whl (32 kB)
+Installing collected packages: html2text
+Successfully installed html2text-2020.1.16
+Collecting markovify
+  Downloading markovify-0.9.3.tar.gz (28 kB)
+Collecting unidecode
+  Downloading Unidecode-1.3.2-py3-none-any.whl (235 kB)
+Building wheels for collected packages: markovify
+  Building wheel for markovify (setup.py): started
+  Building wheel for markovify (setup.py): finished with status 'done'
+  Created wheel for markovify: filename=markovify-0.9.3-py3-none-any.whl size=18622 sha256=d3c37951eeb7ec1922fec11c04e2235ab250e85aa03f0e37dbdc245dd46dd4c1
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/6c/95/65/1d19e9b347e1027eeb1a6988af4a429ab7215f00d26dc6634b
+Successfully built markovify
+Installing collected packages: unidecode, markovify
+Successfully installed markovify-0.9.3 unidecode-1.3.2
+Collecting numpy
+  Downloading numpy-1.22.2-cp39-cp39-macosx_10_14_x86_64.whl (17.6 MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.22.2
+Collecting pytesseract
+  Downloading pytesseract-0.3.8.tar.gz (14 kB)
+Collecting Pillow
+  Downloading Pillow-9.0.1-cp39-cp39-macosx_10_10_x86_64.whl (3.0 MB)
+Building wheels for collected packages: pytesseract
+  Building wheel for pytesseract (setup.py): started
+  Building wheel for pytesseract (setup.py): finished with status 'done'
+  Created wheel for pytesseract: filename=pytesseract-0.3.8-py2.py3-none-any.whl size=14072 sha256=2145933376ddd5a07eb5f1464333e4b38a6ddf4a1cafd677f4d8d29ad16b2d1b
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/3f/38/cf/de35347eec541f89e62bb0011764c38cbd4a82c0d532168abb
+Successfully built pytesseract
+Installing collected packages: Pillow, pytesseract
+Successfully installed Pillow-9.0.1 pytesseract-0.3.8
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Requirement already satisfied: webcolors in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.11.1)
+Requirement already satisfied: geopy in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.0)
+Requirement already satisfied: geographiclib<2,>=1.49 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from geopy) (1.52)
+Requirement already satisfied: astral in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2)
+Requirement already satisfied: pytz in /Users/anton/Library/Python/3.9/lib/python/site-packages (from astral) (2021.3)
+Requirement already satisfied: zalgo_text in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.6)
+Requirement already satisfied: bs4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from bs4) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->bs4) (2.3.1)
+Requirement already satisfied: feedparser in /Users/anton/Library/Python/3.9/lib/python/site-packages (6.0.8)
+Requirement already satisfied: sgmllib3k in /Users/anton/Library/Python/3.9/lib/python/site-packages (from feedparser) (1.0.0)
+Requirement already satisfied: qrcode in /Users/anton/Library/Python/3.9/lib/python/site-packages (7.3.1)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: pydub in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.25.1)
+Requirement already satisfied: html2text in /Users/anton/Library/Python/3.9/lib/python/site-packages (2020.1.16)
+Requirement already satisfied: markovify in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.9.3)
+Requirement already satisfied: unidecode in /Users/anton/Library/Python/3.9/lib/python/site-packages (from markovify) (1.3.2)
+Requirement already satisfied: numpy in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.22.2)
+Requirement already satisfied: pytesseract in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.3.8)
+Requirement already satisfied: Pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pytesseract) (9.0.1)
+Requirement already satisfied: pillow in /Users/anton/Library/Python/3.9/lib/python/site-packages (9.0.1)
+Collecting vk_api
+  Downloading vk_api-11.9.7-py3-none-any.whl (48 kB)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.8)
+Installing collected packages: vk-api
+Successfully installed vk-api-11.9.7
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.8)
+Collecting wikipedia
+  Downloading wikipedia-1.4.0.tar.gz (27 kB)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.8)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Building wheels for collected packages: wikipedia
+  Building wheel for wikipedia (setup.py): started
+  Building wheel for wikipedia (setup.py): finished with status 'done'
+  Created wheel for wikipedia: filename=wikipedia-1.4.0-py3-none-any.whl size=11696 sha256=77aa2ed5e5dcf2ab265d7cb5265ced277eda92602e3eea6d0d511d8e40deb18e
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/c2/46/f4/caa1bee71096d7b0cdca2f2a2af45cacf35c5760bee8f00948
+Successfully built wikipedia
+Installing collected packages: wikipedia
+Successfully installed wikipedia-1.4.0
+Collecting wget
+  Downloading wget-3.2.zip (10 kB)
+Building wheels for collected packages: wget
+  Building wheel for wget (setup.py): started
+  Building wheel for wget (setup.py): finished with status 'done'
+  Created wheel for wget: filename=wget-3.2-py3-none-any.whl size=9672 sha256=ba1e70a246bfe2a9a802ae961bd06fb6e1206ee94639c09c152ebd0f57c8988b
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/04/5f/3e/46cc37c5d698415694d83f607f833f83f0149e49b3af9d0f38
+Successfully built wget
+Installing collected packages: wget
+Successfully installed wget-3.2
+Collecting google_trans_new
+  Downloading google_trans_new-1.1.9-py3-none-any.whl (9.2 kB)
+Installing collected packages: google-trans-new
+Successfully installed google-trans-new-1.1.9
+Collecting lyricsgenius
+  Downloading lyricsgenius-3.0.1-py3-none-any.whl (59 kB)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.27.1)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.8)
+Installing collected packages: lyricsgenius
+Successfully installed lyricsgenius-3.0.1
+Collecting SpeechRecognition
+  Downloading SpeechRecognition-3.8.1-py2.py3-none-any.whl (32.8 MB)
+Installing collected packages: SpeechRecognition
+Successfully installed SpeechRecognition-3.8.1
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Requirement already satisfied: requests==2.27.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from pyaspeller) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.8)
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2021.10.8)
+Collecting yandex_music
+  Downloading yandex-music-1.0.0.tar.gz (182 kB)
+Collecting certifi==2020.12.5
+  Downloading certifi-2020.12.5-py2.py3-none-any.whl (147 kB)
+Collecting chardet==4.0.0
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+Collecting idna==2.10
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting pysocks==1.7.1
+  Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+Collecting requests==2.25.1
+  Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Collecting urllib3==1.26.3
+  Downloading urllib3-1.26.3-py2.py3-none-any.whl (137 kB)
+Building wheels for collected packages: yandex-music
+  Building wheel for yandex-music (setup.py): started
+  Building wheel for yandex-music (setup.py): finished with status 'done'
+  Created wheel for yandex-music: filename=yandex_music-1.0.0-py3-none-any.whl size=284576 sha256=caf0681141c2fcd54f4414d7a4c465c8a89d3d892af41bc45415391803f7791d
+  Stored in directory: /Users/anton/Library/Caches/pip/wheels/53/53/c5/ea383fd327a9cd5119dcbbdcbcc4d0ce6f1c19afe5daa958aa
+Successfully built yandex-music
+Installing collected packages: urllib3, idna, chardet, certifi, requests, pysocks, yandex-music
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.26.8
+    Uninstalling urllib3-1.26.8:
+      Successfully uninstalled urllib3-1.26.8
+  Attempting uninstall: idna
+    Found existing installation: idna 3.3
+    Uninstalling idna-3.3:
+      Successfully uninstalled idna-3.3
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2021.10.8
+    Uninstalling certifi-2021.10.8:
+      Successfully uninstalled certifi-2021.10.8
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 pysocks-1.7.1 requests-2.25.1 urllib3-1.26.3 yandex-music-1.0.0
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
+Requirement already satisfied: vk_api in /Users/anton/Library/Python/3.9/lib/python/site-packages (11.9.7)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from vk_api) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->vk_api) (2.10)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.25.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2020.12.5)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (1.26.3)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests) (4.0.0)
+Requirement already satisfied: wikipedia in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.4.0)
+Requirement already satisfied: beautifulsoup4 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (4.10.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4->wikipedia) (2.3.1)
+Requirement already satisfied: wget in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.2)
+Requirement already satisfied: google_trans_new in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.1.9)
+Requirement already satisfied: lyricsgenius in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.0.1)
+Requirement already satisfied: beautifulsoup4>=4.6.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (4.10.0)
+Requirement already satisfied: requests>=2.20.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from lyricsgenius) (2.25.1)
+Requirement already satisfied: soupsieve>1.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from beautifulsoup4>=4.6.0->lyricsgenius) (2.3.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (4.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests>=2.20.0->lyricsgenius) (1.26.3)
+Requirement already satisfied: SpeechRecognition in /Users/anton/Library/Python/3.9/lib/python/site-packages (3.8.1)
+Requirement already satisfied: pyaspeller in /Users/anton/Library/Python/3.9/lib/python/site-packages (0.2.3)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2020.12.5)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.0.11)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests==2.27.1->pyaspeller) (1.26.3)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.25.1
+    Uninstalling requests-2.25.1:
+      Successfully uninstalled requests-2.25.1
+Successfully installed requests-2.27.1
+Requirement already satisfied: gTTS in /Users/anton/Library/Python/3.9/lib/python/site-packages (2.2.3)
+Requirement already satisfied: requests in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (2.27.1)
+Requirement already satisfied: six in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (1.16.0)
+Requirement already satisfied: click in /Users/anton/Library/Python/3.9/lib/python/site-packages (from gTTS) (8.0.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2020.12.5)
+Requirement already satisfied: idna<4,>=2.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from requests->gTTS) (2.0.11)
+Requirement already satisfied: yandex_music in /Users/anton/Library/Python/3.9/lib/python/site-packages (1.0.0)
+Requirement already satisfied: certifi==2020.12.5 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2020.12.5)
+Requirement already satisfied: idna==2.10 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (2.10)
+Requirement already satisfied: pysocks==1.7.1 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.7.1)
+Requirement already satisfied: urllib3==1.26.3 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (1.26.3)
+Collecting requests==2.25.1
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: chardet==4.0.0 in /Users/anton/Library/Python/3.9/lib/python/site-packages (from yandex_music) (4.0.0)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.27.1
+    Uninstalling requests-2.27.1:
+      Successfully uninstalled requests-2.27.1
+Successfully installed requests-2.25.1
