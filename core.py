@@ -1,3 +1,4 @@
+import this
 import token
 from telegram.ext import Updater, MessageHandler
 
@@ -109,6 +110,15 @@ __conversations__ = []
 Output('CatABMS Kernel loading is done.')
 
 writeTo(time.time(), "start-time.txt")
+start = time.time()
+
+def Safeexec(event, script, locals_dict):
+    def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
+        print("sending message")
+        bot.send_message(event.effective_chat.id, text)
+    print("running safexec")
+    locals_dict.update(locals())
+    exec(script, globals(), locals_dict)
 
 def process(event, context):
     EventMsg(str(event.update_id))
@@ -128,7 +138,6 @@ def process(event, context):
             using = False
             outputd = False
             PlusWrite(event.effective_message.text + "\n", "usr/bread.txt")
-            start = time.time()
             user_id = event.message.from_user.id
             peer_id = event.effective_message.chat.id
             print(event.effective_message.text)
@@ -161,7 +170,8 @@ Parameter: {parameter}
                             procmsg("Command starting...")
                             if not code_js["testing"]:
                                 print("here it is")
-                                exec(code)
+                                print("executing safeexec")
+                                Safeexec(event, code, locals())
                                 PlusWrite("used command: " + ids[commands.index(x)] + ".py\n", "commandslog.txt")
                                 try:
                                     sc = int(getparam(user_id, "score"))
