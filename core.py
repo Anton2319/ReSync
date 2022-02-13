@@ -171,7 +171,6 @@ Parameter: {parameter}
                         Safemessage(event, "Команда требует прикрепленного изображения.")
                     elif modes[commands.index(x)] == "start" and parameter == "":
                         Safemessage(event, "Команда требует аргумента.\n\nПример использования: " + cmd + " текст")
-                        Safeexec(event, message, locals())
                     else:
                         if not code_js["restricted"]:
                             code = ReadFF(f"{COMMANDSDIR}{ids[commands.index(x)]}/{ids[commands.index(x)]}.py")
