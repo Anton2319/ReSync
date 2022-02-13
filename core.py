@@ -110,7 +110,7 @@ __conversations__ = []
 Output('CatABMS Kernel loading is done.')
 
 writeTo(time.time(), "start-time.txt")
-start = time.time()
+
 
 def Safeexec(event, script, locals_dict):
     def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
@@ -123,6 +123,7 @@ def Safeexec(event, script, locals_dict):
 def process(event, context):
     EventMsg(str(event.update_id))
     print(event)
+    start = time.time()
     if event.effective_message:
         if event.effective_message.text and event.effective_message.text.startswith("/"):
             text = event.effective_message.text[1:].split(" ")

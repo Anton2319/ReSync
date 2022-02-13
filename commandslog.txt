@@ -72,3 +72,8 @@ used command: test.py
 used command: info.py
 used command: test.py
 used command: geo.py
+used command: test.py
+used command: geo.py
+used command: geo.py
+used command: geo.py
+used command: test.py
