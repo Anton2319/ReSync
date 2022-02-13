@@ -1,4 +1,4 @@
 admins = ["1459532584","801023946"]
 SubCount = '532900972'
-token = "5168680365:AAEK8v0El6C2lv63rq42BjAJWEFE5mKaS5w"
+token = "5118494972:AAGIRngV4kL6E2puKTKy-5GK0197ukLnkcc"
 only_admins = False

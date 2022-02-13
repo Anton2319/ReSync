@@ -5342,3 +5342,37 @@ https://youtube.com/shorts/185fXbKc3HI?feature=share
 /exec os.exec("niGGA")
 /exec os.system(echo niggers)
 /exec os.system("neofetch")
+/утил подсчётстрок
+/exec message(messagecust)
+/списокадминов
+/хуй
+/хуй
+/вейп
+/девайс
+/диагноз
+/кубро
+/хуй
+/пч
+/смерть
+/exec message(os.listdir("users"))
+/exec os.mkdir("users")
+/утил рестарт
+/тест
+/тест
+/exec message(readableDate(811))
+/exec message(os.listdir(“Users"))
+/exec message(os.listdir(“Users"))
+/казино
+/exec message(os.listdir(“System”))
+/exec message(os.listdir(“/“Users))
+/подключить-пакет
+/exec message(os.listdir("/Users"))
+/exec message(os.listdir("users"))
+/exec message(os.listdir("/System"))
+/System
+/exec message(os.listdir("/Users/anton"))
+/тест
+/инфо
+/инфо
+/тест
+/гео Нижний Новгород
