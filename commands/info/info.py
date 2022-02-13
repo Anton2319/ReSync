@@ -25,6 +25,6 @@ Codename: {codename}
 Примерное кол-во бесед: {str(len(os.listdir('chats')))}
 
 Информация о разработчиках:
-Разработчики - @catweird и @theagrik
+Разработчики - @catweird2 и @theagrik
 Домашняя страница - www.ctwre.ru
 Catware Wiki - wiki.ctwre.ru''', disable_mentions=1, reply=True)

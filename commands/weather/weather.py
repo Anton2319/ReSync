@@ -11,18 +11,18 @@ e_exists = False
 
 try:
     if parameter == "":
-        if "geo" in event.object.keys():
-            latitude = event.object["geo"]["coordinates"]["latitude"]
-            longitude = event.object["geo"]["coordinates"]["longitude"]
-            geo = Geocode(f"{latitude}, {longitude}")
-        elif os.path.exists(f"users/{user_id}/city.txt"):
+        # if "geo" in event.object.keys():
+        #     latitude = event.object["geo"]["coordinates"]["latitude"]
+        #     longitude = event.object["geo"]["coordinates"]["longitude"]
+        #     geo = Geocode(f"{latitude}, {longitude}")
+        if os.path.exists(f"users/{user_id}/city.txt"):
             geo = Geocode(ReadFF(f'users/{user_id}/city.txt'))
         else:
-            userinfo = vk.users.get(user_ids=user_id, fields="city", lang=0)[0]
-            if "city" in userinfo.keys():
-                geo = Geocode(userinfo["city"]["title"])
-            else:
-                raise Exception("Ахахах город не указан")
+            # userinfo = vk.users.get(user_ids=user_id, fields="city", lang=0)[0]
+            # if "city" in userinfo.keys():
+            #     geo = Geocode(userinfo["city"]["title"])
+            # else:
+            raise Exception("Ахахах город не указан")
     else:
         geo = Geocode(parameter)
 
@@ -197,6 +197,7 @@ except Exception as e:
     weather_res = """По вашему запросу ничего не было найдено.
 
     Проверьте, корректно ли указано место, либо есть ли у вас в профиле какой-либо населённый пункт."""
+    print(e.with_traceback())
     e_exists = True
     global exc
     exc = str(e)

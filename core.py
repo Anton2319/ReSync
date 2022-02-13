@@ -113,12 +113,18 @@ writeTo(time.time(), "start-time.txt")
 
 
 def Safeexec(event, script, locals_dict):
+    exec(ReadFF("catenv.py"))
     def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
         print("sending message")
         bot.send_message(event.effective_chat.id, text)
     print("running safexec")
     locals_dict.update(locals())
     exec(script, globals(), locals_dict)
+
+def Safemessage(event, text, attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
+    print("running safemessage")
+    bot.send_message(event.effective_chat.id, text)
+
 
 def process(event, context):
     EventMsg(str(event.update_id))
@@ -127,7 +133,7 @@ def process(event, context):
     if event.effective_message:
         if event.effective_message.text and event.effective_message.text.startswith("/"):
             text = event.effective_message.text[1:].split(" ")
-            cmd = text[0]
+            cmd = text[0].lower()
             flags = []
             parameter = text[1:]
             for word in parameter:
@@ -162,33 +168,25 @@ Parameter: {parameter}
                     description = code_js["description"]
 
                     if modes[commands.index(x)] == "pic" and ReadFF("argv_picture.txt") == "none":
-                        message("Команда требует прикрепленного изображения.")
+                        Safemessage(event, "Команда требует прикрепленного изображения.")
                     elif modes[commands.index(x)] == "start" and parameter == "":
-                        message("Команда требует аргумента.\n\nПример использования: " + cmd + " текст")
+                        Safemessage(event, "Команда требует аргумента.\n\nПример использования: " + cmd + " текст")
+                        Safeexec(event, message, locals())
                     else:
                         if not code_js["restricted"]:
                             code = ReadFF(f"{COMMANDSDIR}{ids[commands.index(x)]}/{ids[commands.index(x)]}.py")
                             procmsg("Command starting...")
                             if not code_js["testing"]:
-                                print("here it is")
                                 print("executing safeexec")
                                 Safeexec(event, code, locals())
                                 PlusWrite("used command: " + ids[commands.index(x)] + ".py\n", "commandslog.txt")
-                                try:
-                                    sc = int(getparam(user_id, "score"))
-                                    sc = sc + 1
-                                    setparam(user_id, "score", str(sc))
-                                except:
-                                    Output("CUMv2/Warning: unable to +1 in user's score")
-                                    pass
+                                if str(user_id) not in os.listdir("users"): os.mkdir(f"users/{user_id}")
                                 succ()
                             else:
                                 if isTester(user_id):
-                                    exec(code)
+                                    Safeexec(event, code, locals())
                                 else:
-                                    message(
-                                        "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",
-                                        reply=True)
+                                    Safemessage("Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",reply=True)
                             # except Exception as e:
                             #     Output(e)
                             #     message(
@@ -200,22 +198,21 @@ Parameter: {parameter}
                             #     failcomplete()
                         else:
                             if str(user_id) not in ReadFF("usr/restricted.txt").split(","):
-                                message("Данная команда внесена в пакет потенциально оскорбительных команд. Однако, подключить пакет можно командой \"подключить-пакет\".")
+                                Safemessage(event, "Данная команда внесена в пакет потенциально оскорбительных команд. Однако, подключить пакет можно командой \"подключить-пакет\".")
                             else:
                                 try:
                                     code = ReadFF(f"{COMMANDSDIR}{ids[commands.index(x)]}/{ids[commands.index(x)]}.py")
                                     if not code_js["testing"]:
-                                        exec(code)
+                                        Safeexec(event, code, locals())
                                     else:
                                         if isTester(user_id):
-                                            exec(code)
+                                            Safeexec(event, code, locals())
                                         else:
-                                            message("Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",
-                                                reply=True)
+                                            Safemessage(event, "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",reply=True)
                                 except Exception as e:
                                     failcomplete()
                                     Output(e)
-                                    message(
+                                    Safemessage(event,
                                         "Команда " + command_ru + " [" + identificator + f"] аварийно завершилась из-за ошибки.\nКод ошибки: {generrorcode(str(e), identificator)}\nАвтор команды: " + author + "\nИнформация об ошибке была автоматически отправлена администрации бота.")
                                     exc_type, exc_value, exc_tb = sys.exc_info()
                                     mta("==CatABMS-Package BugReport==\nОбщая информация:\n\nСерверное время: " + readableDate(
@@ -228,8 +225,7 @@ Parameter: {parameter}
                                     # failcomplete()
                                 except vk_api.exceptions.ApiError as e:
                                     if str(e).startswith("[917]"):
-                                        message(
-                                            "Упс! Я не могу выполнить эту команду, потому что не являюсь админом этого чата! Назначьте меня админом и повторите попытку снова.")
+                                        Safemessage(event, "Упс! Я не могу выполнить эту команду, потому что не являюсь админом этого чата! Назначьте меня админом и повторите попытку снова.")
 
         else:
             procmsg("not a message, skipping")

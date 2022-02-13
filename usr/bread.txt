@@ -5383,3 +5383,42 @@ https://youtube.com/shorts/185fXbKc3HI?feature=share
 /гео Mountain View
 /гео Hollywood
 /тест
+/тест
+/город Йошкар-Ола
+/Гео йошкар-ола
+/чат
+/инфо
+/команда город
+/утил выгрузить commands/city/city.py
+/exec message(Geocode("Нижний Новгород")[2])
+/exec message(os.listdir(f"users/{user_id}"))
+/инфо
+/город
+/город Нижний Новгород
+/exec message(os.listdir("configs"))
+/exec message(ReadFF("commands/tokens.py"))
+/город Joshkar-Ola
+/город Yoshkar-Ola
+/погода San-Francisco
+/погода Москва
+/погода
+/погода
+/погода
+/погода
+/тест
+/погода
+/погода калининград
+/тест
+/команды
+/демотиватор
+/вики
+/вики
+/вики
+/вики текст
+/демотивтор
+/демотиватор
+/чат
+/араю
+/араб
+/кек
+/кек чебурек
