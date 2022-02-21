@@ -9,6 +9,13 @@
 import sys, os
 import catenv
 
+def get_base_prefix_compat():
+    """Get base/real prefix, or sys.prefix if there is none."""
+    return getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
+
+def in_virtualenv():
+    return get_base_prefix_compat() != sys.prefix
+
 Ff = open("catenv.py", 'r', encoding='UTF-8')
 __catenv__ = Ff.read()
 exec(__catenv__)
@@ -38,7 +45,11 @@ for x in os.listdir("modules"):
             Output(" [!] The " + x[:-3] + " modules set is invalid. Log will write into file modulesinstall.txt. Starting of modules setup...")
             for z in install:
                 procmsg("Installing " + z)
-                os.system("\"" + sys.executable + " \"" + " -m pip install --user " + z + " >> modulesinstall.txt")
+                if in_virtualenv():
+                    procmsg("Running inside virtualenv, performing nonuser install")
+                    os.system("\"" + sys.executable + " \"" + " -m pip install " + z + " >> modulesinstall.txt")
+                else:
+                    os.system("\"" + sys.executable + " \"" + " -m pip install --user " + z + " >> modulesinstall.txt")
                 succ()
             try:
                 exec(y)
@@ -128,9 +139,11 @@ mta("CatABMS is starting.")
 #try:
     #mta(f'Запуск CatABMS {botname} {version} на ядре {core}...')
 exec(ReadFF("core.py"))
+procmsg("core launched, starting polling")
 message_handler = MessageHandler(None, process)
 dispatcher.add_handler(message_handler)
 updater.start_polling()
+succ()
 #except Exception as e:
         #Output('Kernel panic: ' + str(e))
 #except KeyboardInterrupt:

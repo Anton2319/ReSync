@@ -252,7 +252,7 @@ else:
     mta(f"""Бот запущен{addition}.
 Сервер: {Get("http://ident.me/")}
 Операционная система: {osname}
-Хостнейм: {os.uname()[1]}""")
+Хостнейм: {platform.uname()[1]}""")
 del addition
 
                 # if peer_id not in __conversations__: __conversations__.append(peer_id)
