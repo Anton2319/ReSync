@@ -1,6 +1,10 @@
 need_install = False
-install = []
+install = ["psutil"]
 modules = [
+"import psutil",
+"import telegram",
+"from telegram.ext import Updater, CommandHandler",
+"from telegram.ext import MessageHandler, Filters",
 "import binascii",
 "from math import ceil",
 "import textwrap",

@@ -1,6 +1,7 @@
 need_install = True
 install = [
 "vk_api",
+"python-telegram-bot",
 "requests",
 "wikipedia",
 "wget",

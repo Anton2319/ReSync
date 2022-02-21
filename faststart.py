@@ -6,12 +6,7 @@
 #
 # CatOS FastStart Boot
 #
-
-import sys, os, psutil
-import telegram
-from telegram.ext import Updater, CommandHandler
-from telegram.ext import MessageHandler, Filters
-
+import sys, os
 import catenv
 
 Ff = open("catenv.py", 'r', encoding='UTF-8')
@@ -43,7 +38,7 @@ for x in os.listdir("modules"):
             Output(" [!] The " + x[:-3] + " modules set is invalid. Log will write into file modulesinstall.txt. Starting of modules setup...")
             for z in install:
                 procmsg("Installing " + z)
-                os.system(sys.executable + " -m pip install --user " + z + " >> modulesinstall.txt")
+                os.system("\"" + sys.executable + " \"" + " -m pip install --user " + z + " >> modulesinstall.txt")
                 succ()
             try:
                 exec(y)
