@@ -8,7 +8,6 @@
 #
 import sys, os
 import threading
-
 import catenv
 
 def get_base_prefix_compat():
@@ -25,8 +24,8 @@ exec(__catenv__)
 Ff.close()
 del Ff
 lo("CatENV successfully started", type="Loader")
-
-
+global threads
+global sys_threads
 
 #lo("", type="Loader")
 
@@ -86,11 +85,11 @@ def start_server(port):
     succ()
 
 if __name__ == "__main__":
-    global threads
-    threads = list()
+    global sys_threads
+    sys_threads = list()
     httpServerThread = threading.Thread(target=start_server,  args=(8000, ), daemon=True)
     httpServerThread.start()
-    threads.append(httpServerThread)
+    sys_threads.append(httpServerThread)
 nickname_symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÑñ АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя,.-_0123456789"
 lo("Executing: getreportban()", type="Loader")
 getreportban()
@@ -162,8 +161,17 @@ media_safelock = False
 #try:
     #mta(f'Запуск CatABMS {botname} {version} на ядре {core}...')
 exec(ReadFF("core.py"))
+
+def onMessage(event, context):
+    if __name__ == "__main__":
+        global threads
+        threads = list()
+        processServerThread = threading.Thread(target=process, args=(event,context, ), daemon=True)
+        processServerThread.start()
+        threads.append(processServerThread)
+
 procmsg("core launched, starting polling")
-message_handler = MessageHandler(None, process)
+message_handler = MessageHandler(None, onMessage)
 dispatcher.add_handler(message_handler)
 updater.start_polling()
 succ()
