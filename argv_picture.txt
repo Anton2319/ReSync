@@ -1,1 +1,1 @@
-none
+http://localhost:8000/attachment_local

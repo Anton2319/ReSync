@@ -14,6 +14,8 @@ install = [
 "yandex_music"
 ]
 modules = [
+"import http.server",
+"import socketserver",
 "import telegram",
 "from telegram.ext import Updater, CommandHandler",
 "from telegram.ext import MessageHandler, Filters",

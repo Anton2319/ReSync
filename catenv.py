@@ -4,7 +4,6 @@
 #
 
 session_editable = 0
-
 #
 # Settings
 #
@@ -671,6 +670,8 @@ def RandomLetter():
     letters = ['q', 'Q', 'w', 'W', 'e', 'E', 'r', 'R', 't', 'T', 'y', 'Y', 'u', 'U', 'i', 'I', 'o', 'O', 'p', 'P', 'a', 'A', 's', 'S', 'd', 'D', 'f', 'F', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'z', 'Z', 'x', 'X', 'c', 'C', 'v', 'V', 'b', 'B', 'n', 'N', 'm', 'M', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     return randd.choice(letters)
 
+
+
 # def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
 #     mta(text)
     # text = str(text).replace("vto.pe", '').replace("vkbot.ru", '')
@@ -737,19 +738,6 @@ def picture(text, text2):
     except:
         #mta(e)
         pass
-
-def picturedata(text, text2):
-    pic = str(text)
-    message("Loading...")
-    try:
-        try:
-            upload = VkUpload(vk_session)
-            photo = upload.photo_messages(photos=text)[0]
-            message(text2, attachment=f"photo{photo['owner_id']}_{photo['id']}", reply=True)
-        except Exception as e:
-            message(text2 + '\n///' + str(e) + '///', reply=True)
-    except Exception as e:
-        message('picture error: ' + str(e), reply=True)
 
 def document(path, text):
     try:

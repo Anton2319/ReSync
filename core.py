@@ -1,3 +1,4 @@
+import os
 import this
 import token
 from telegram.ext import Updater, MessageHandler
@@ -112,12 +113,32 @@ Output('CatABMS Kernel loading is done.')
 writeTo(time.time(), "start-time.txt")
 
 
+
 def Safeexec(event, script, locals_dict):
-    exec(ReadFF("catenv.py"))
     def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
-        print("sending message")
-        bot.send_message(event.effective_chat.id, text)
+        if attachment is None or attachment is "":
+            print("sending message")
+            bot.send_message(event.effective_chat.id, text)
+        else:
+            bot.send_message(event.effective_chat.id, text)
+            procmsg("Sending attachment " + str(attachment))
+            bot.send_photo(event.effective_chat.id, photo=open(attachment, 'rb'))
     print("running safexec")
+
+    def picturedata(path, text):
+        pic = str(path)
+        message("Loading...")
+        try:
+            try:
+                print("Adding attachment")
+                message(text, attachment=path, reply=True)
+                succ()
+            except Exception as e:
+                message(text + '\n///' + str(e) + '///', reply=True)
+        except Exception as e:
+            message('picture error: ' + str(e), reply=True)
+
+    exec(ReadFF("catenv.py"), globals(), locals_dict)
     locals_dict.update(locals())
     exec(script, globals(), locals_dict)
 
@@ -127,12 +148,19 @@ def Safemessage(event, text, attachment="", keyboard="", intent="default", disab
 
 
 def process(event, context):
+    global media_safelock
     EventMsg(str(event.update_id))
     print(event)
     start = time.time()
-    if event.effective_message:
-        if event.effective_message.text and event.effective_message.text.startswith("/"):
-            text = event.effective_message.text[1:].split(" ")
+    if event.effective_message or event.message:
+        if (event.effective_message.text and event.effective_message.text.startswith("/")) or (event.message.caption and event.message.caption.startswith("/")):
+            text = ""
+            try:
+                text = event.effective_message.text[1:].split(" ")
+                text_raw = event.effective_message.text
+            except:
+                text = event.message.caption[1:].split(" ")
+                text_raw = event.message.caption
             cmd = text[0].lower()
             flags = []
             parameter = text[1:]
@@ -144,9 +172,9 @@ def process(event, context):
 
             using = False
             outputd = False
-            PlusWrite(event.effective_message.text + "\n", "usr/bread.txt")
+            PlusWrite(text_raw + "\n", "usr/bread.txt")
             user_id = event.message.from_user.id
-            peer_id = event.effective_message.chat.id
+            peer_id = event.message.chat.id
             print(event.effective_message.text)
             procmsg(vars(event))
             # Поиск соответствия в списке команд
@@ -166,9 +194,43 @@ Parameter: {parameter}
                     identificator = code_js["identificator"]
                     command_ru = code_js["command_ru"]
                     description = code_js["description"]
+                    is_media = False
+                    if event.message.photo is not None:
+                        is_media = True
+                    else:
+                        is_media = False
 
-                    if modes[commands.index(x)] == "pic" and ReadFF("argv_picture.txt") == "none":
+                    if modes[commands.index(x)] == "pic" and is_media is False:
                         Safemessage(event, "Команда требует прикрепленного изображения.")
+                    elif modes[commands.index(x)] == "pic" and is_media is True and media_safelock is False:
+                        try:
+                            media_safelock = True
+                            bot.get_file(event.message.photo[-1].file_id).download("attachment_local")
+                            writeTo("http://localhost:8000/attachment_local", "argv_picture.txt")
+                            if not code_js["restricted"]:
+                                code = ReadFF(f"{COMMANDSDIR}{ids[commands.index(x)]}/{ids[commands.index(x)]}.py")
+                                procmsg("Command starting...")
+                                if not code_js["testing"]:
+                                    print("executing safeexec")
+                                    Safeexec(event, code, locals())
+                                    PlusWrite("used command: " + ids[commands.index(x)] + ".py\n", "commandslog.txt")
+                                    if str(user_id) not in os.listdir("users"): os.mkdir(f"users/{user_id}")
+                                    succ()
+                                else:
+                                    if isTester(user_id):
+                                        Safeexec(event, code, locals())
+                                    else:
+                                        Safemessage(
+                                            "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",
+                                            reply=True)
+                        finally:
+                            media_safelock = False
+                            is_media = False
+                        PlusWrite("used command: " + ids[commands.index(x)] + ".py\n", "commandslog.txt")
+                        if str(user_id) not in os.listdir("users"): os.mkdir(f"users/{user_id}")
+                        succ()
+                    elif media_safelock is True and is_media is True:
+                        Safemessage(event, "Бот не может одновременно обрабатывать медиа от нескольких пользователей, пожалуйста подождите")
                     elif modes[commands.index(x)] == "start" and parameter == "":
                         Safemessage(event, "Команда требует аргумента.\n\nПример использования: " + cmd + " текст")
                     else:
@@ -227,7 +289,7 @@ Parameter: {parameter}
                                         Safemessage(event, "Упс! Я не могу выполнить эту команду, потому что не являюсь админом этого чата! Назначьте меня админом и повторите попытку снова.")
 
         else:
-            procmsg("not a message, skipping")
+            procmsg("not a command, skipping")
     else:
         procmsg("not a message, skipping")
     # lastid = event.update_id

@@ -1,6 +1,7 @@
 need_install = True
 install = ["psutil", "platform"]
 modules = [
+"import threading",
 "import platform",
 "import psutil",
 "import binascii",
