@@ -1,6 +1,8 @@
 import os
 import this
 import token
+
+from requests import get
 from telegram.ext import Updater, MessageHandler
 
 Output("CatABMS Kernel version " + core + " startup...")
@@ -121,8 +123,8 @@ def Safeexec(event, script, locals_dict):
             bot.send_message(event.effective_chat.id, text)
         else:
             bot.send_message(event.effective_chat.id, text)
-            procmsg("Sending attachment " + str(attachment))
-            bot.send_photo(event.effective_chat.id, photo=open(attachment, 'rb'))
+            procmsg("Sending attachment")
+            bot.send_photo(event.effective_chat.id, photo=attachment)
     print("running safexec")
 
     def picturedata(path, text):
@@ -131,7 +133,19 @@ def Safeexec(event, script, locals_dict):
         try:
             try:
                 print("Adding attachment")
-                message(text, attachment=path, reply=True)
+                message(text, attachment=open(path, 'rb'), reply=True)
+                succ()
+            except Exception as e:
+                message(text + '\n///' + str(e) + '///', reply=True)
+        except Exception as e:
+            message('picture error: ' + str(e), reply=True)
+
+    def picture(path, text):
+        message("Loading...")
+        try:
+            try:
+                print("Adding attachment")
+                message(text, attachment=get(path).content, reply=True)
                 succ()
             except Exception as e:
                 message(text + '\n///' + str(e) + '///', reply=True)
@@ -220,7 +234,7 @@ Parameter: {parameter}
                                     if isTester(user_id):
                                         Safeexec(event, code, locals())
                                     else:
-                                        Safemessage(
+                                        Safemessage(event,
                                             "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",
                                             reply=True)
                         finally:
@@ -247,7 +261,7 @@ Parameter: {parameter}
                                 if isTester(user_id):
                                     Safeexec(event, code, locals())
                                 else:
-                                    Safemessage("Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",reply=True)
+                                    Safemessage(event, "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",reply=True)
                             # except Exception as e:
                             #     Output(e)
                             #     message(

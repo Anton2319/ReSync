@@ -723,21 +723,21 @@ def mta(text,dont_parse=1):
     except Exception as e:
         FailMsg('Не удалось вызвать MTA: ' + str(e))
 
-def picture(text, text2):
-    pic = str(text)
-    message("Loading...")
-    try:
-        try:
-            upload = VkUpload(vk_session)
-            image_url = pic
-            image = session.get(image_url, stream=True)
-            photo = upload.photo_messages(photos=image.raw)[0]
-            message(text2, attachment=f"photo{photo['owner_id']}_{photo['id']}", reply=True)
-        except:
-            message(text2, reply=True)
-    except:
-        #mta(e)
-        pass
+# def picture(text, text2):
+#     pic = str(text)
+#     message("Loading...")
+#     try:
+#         try:
+#             upload = VkUpload(vk_session)
+#             image_url = pic
+#             image = session.get(image_url, stream=True)
+#             photo = upload.photo_messages(photos=image.raw)[0]
+#             message(text2, attachment=f"photo{photo['owner_id']}_{photo['id']}", reply=True)
+#         except:
+#             message(text2, reply=True)
+#     except:
+#         #mta(e)
+#         pass
 
 def document(path, text):
     try:
