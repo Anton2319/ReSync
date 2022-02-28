@@ -133,7 +133,7 @@ def Safeexec(event, script, locals_dict):
         try:
             try:
                 print("Adding attachment")
-                message(text, attachment=open(path, 'rb'), reply=True)
+                message(text, attachment=open(path, 'rb').read(), reply=True)
                 succ()
             except Exception as e:
                 message(text + '\n///' + str(e) + '///', reply=True)
