@@ -1,4 +1,6 @@
 # CatOS-Type Package
+import traceback
+
 author = "catwared, aGrIk"
 mode = "="
 deps = 'None'
@@ -29,7 +31,6 @@ try:
     yura = convertjson(Get(f"https://api.openweathermap.org/data/2.5/weather?lat={geo[0]}&lang=ru&lon={geo[1]}&appid={owm_token}&units=metric"))
     ivan = convertjson(Get(f"https://api.openweathermap.org/data/2.5/forecast?lat={geo[0]}&lang=ru&lon={geo[1]}&units=metric&appid={owm_token}"))
     suninfo = ssorg(geo[0], geo[1])
-
 
     def gwd(deg):
         l = ['С','СВ','В','ЮВ','Ю','ЮЗ','З','СЗ']
@@ -64,8 +65,8 @@ try:
     timezone = suninfo[10]
     sunrise = suninfo[0]
     sunset = suninfo[1]
+    sunset = suninfo[1]
     currtime = time.time() + timezone
-
 
     def emoji(id):
         cases = {
@@ -197,7 +198,8 @@ except Exception as e:
     weather_res = """По вашему запросу ничего не было найдено.
 
     Проверьте, корректно ли указано место, либо есть ли у вас в профиле какой-либо населённый пункт."""
-    print(e.with_traceback())
+    #print(e.with_traceback())
+    traceback.print_exception()
     e_exists = True
     global exc
     exc = str(e)
