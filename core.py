@@ -210,6 +210,7 @@ Parameter: {parameter}
                     description = code_js["description"]
                     is_media = False
                     if event.message.photo is not None:
+                        print("Media attachment detected")
                         is_media = True
                     else:
                         is_media = False
@@ -218,7 +219,10 @@ Parameter: {parameter}
                         Safemessage(event, "Команда требует прикрепленного изображения.")
                     elif modes[commands.index(x)] == "pic" and is_media is True and media_safelock is False:
                         try:
+                            procmsg("Enabling safelock")
                             media_safelock = True
+                            succ()
+                            procmsg("Downloading file")
                             bot.get_file(event.message.photo[-1].file_id).download("attachment_local")
                             writeTo("http://localhost:8000/attachment_local", "argv_picture.txt")
                             if not code_js["restricted"]:
@@ -237,9 +241,51 @@ Parameter: {parameter}
                                         Safemessage(event,
                                             "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",
                                             reply=True)
+                            else:
+                                if str(user_id) not in ReadFF("usr/restricted.txt").split(","):
+                                    procmsg("")
+                                    Safemessage(event,
+                                                "Данная команда внесена в пакет потенциально оскорбительных команд. Однако, подключить пакет можно командой \"подключить-пакет\".")
+                                else:
+                                    try:
+                                        code = ReadFF(
+                                            f"{COMMANDSDIR}{ids[commands.index(x)]}/{ids[commands.index(x)]}.py")
+                                        if not code_js["testing"]:
+                                            Safeexec(event, code, locals())
+                                        else:
+                                            if isTester(user_id):
+                                                Safeexec(event, code, locals())
+                                            else:
+                                                Safemessage(event,
+                                                            "Вы не являетесь тестировщиком, если вы хотите стать тестировщиком, то обратитесь в @catpy.beta!",
+                                                            reply=True)
+                                    except Exception as e:
+                                        failcomplete()
+                                        Output(e)
+                                        Safemessage(event,
+                                                    "Команда " + command_ru + " [" + identificator + f"] аварийно завершилась из-за ошибки.\nКод ошибки: {generrorcode(str(e), identificator)}\nАвтор команды: " + author + "\nИнформация об ошибке была автоматически отправлена администрации бота.")
+                                        exc_type, exc_value, exc_tb = sys.exc_info()
+                                        mta("==CatABMS-Package BugReport==\nОбщая информация:\n\nСерверное время: " + readableDate(
+                                            time.time()) + "\nКоманда: " + command_ru + " [" + identificator + "]\nАвтор команды: " + author + "\nПользователь: " + getmention(
+                                            user_id) + " (" + str(user_id) + ")\nID диалога (peer_id): " + str(
+                                            peer_id) + "\nПереданный параметр: " + parameter + "\nКод ошибки: " + str(
+                                            e) + "\n\nTraceback ошибки:\n\n" + "\n".join(
+                                            traceback.format_exception(exc_type, exc_value, exc_tb)))
+                                        Output("\n".join(traceback.format_exception(exc_type, exc_value, exc_tb)))
+                                        # failcomplete()
+                                    except vk_api.exceptions.ApiError as e:
+                                        if str(e).startswith("[917]"):
+                                            Safemessage(event,
+                                                        "Упс! Я не могу выполнить эту команду, потому что не являюсь админом этого чата! Назначьте меня админом и повторите попытку снова.")
+                        except Exception as e:
+                            procmsg("Failed to process media command")
+                            fail()
+                            e.with_traceback()
                         finally:
+                            procmsg("disabling safelock")
                             media_safelock = False
                             is_media = False
+                            succ()
                         PlusWrite("used command: " + ids[commands.index(x)] + ".py\n", "commandslog.txt")
                         if str(user_id) not in os.listdir("users"): os.mkdir(f"users/{user_id}")
                         succ()
@@ -273,6 +319,7 @@ Parameter: {parameter}
                             #     failcomplete()
                         else:
                             if str(user_id) not in ReadFF("usr/restricted.txt").split(","):
+                                procmsg("")
                                 Safemessage(event, "Данная команда внесена в пакет потенциально оскорбительных команд. Однако, подключить пакет можно командой \"подключить-пакет\".")
                             else:
                                 try:
