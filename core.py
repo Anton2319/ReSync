@@ -20,6 +20,7 @@ system_errors = ""
 service_errors = []
 corerc_errors = []
 execution_errors = []
+hdl_ids = []
 systemcare = 0
 careless = 0
 
@@ -27,6 +28,8 @@ COMMANDSDIR = "commands/"
 lo("COMMANDSDIR is " + COMMANDSDIR, type="Kernel Loader")
 VCCOMMANDSDIR = "voice/"
 lo("VCCOMMANDSDIR is " + VCCOMMANDSDIR, type="Kernel Loader")
+HANDLERSDIR = "handlers/"
+lo("HANDLERSDIR is " + HANDLERSDIR, type="Kernel Loader")
 
 peers_list = ReadFF("chats/peers.txt")
 
@@ -47,6 +50,31 @@ for x in os.listdir(COMMANDSDIR):
         else:
             failcomplete()
             Output(f"Warning: command {cmdjs['command_ru']} is disabled")
+
+    except Exception as e:
+        failcomplete()
+        Output(e)
+        system_errors += "Unable to load command: " + str(e)
+        lo("Unable to load command: " + str(e), type="Kernel Loader - ERROR")
+        systemcare += 1
+        careless += 1
+lo("Loading handlers...", type="Kernel Loader")
+
+for x in os.listdir(HANDLERSDIR):
+    try:
+        procmsg("Loading: " + x)
+        cmdjs = convertjson(ReadFF(f"{HANDLERSDIR}{x}/{x}.json"))
+        if not cmdjs["disabled"]:
+            authors.append(cmdjs["author"])
+            modes.append(cmdjs["mode"])
+            handlers.append(cmdjs["identificator"])
+            hdl_ids.append(cmdjs["identificator"])
+            descs.append(cmdjs["description"])
+            succ()
+            systemcare += 1
+        else:
+            failcomplete()
+            Output(f"Warning: handler {cmdjs['identificator']} is disabled")
 
     except Exception as e:
         failcomplete()
@@ -152,6 +180,21 @@ def Safeexec(event, script, locals_dict):
         except Exception as e:
             message('picture error: ' + str(e), reply=True)
 
+    def getname(uid, namecase="nom", nickname_if_possible=True):
+        uid = getid(uid)
+        if not os.path.exists(
+                f"users/{uid}/nick.txt") or not nickname_if_possible:  # если нет никнейма или не нужен никнейм
+            if uid != None:
+                if not isgroup(uid):
+                    unamee = vk.users.get(user_id=uid, name_case=namecase, lang=0)[0]
+                    return unamee["first_name"] + " " + unamee["last_name"]
+                else:
+                    return vk.groups.getById(group_id=uid)[0]["name"]
+            else:
+                return "пользователь"
+        else:
+            return ReadFF(f"users/{uid}/nick.txt")
+
     exec(ReadFF("catenv.py"), globals(), locals_dict)
     locals_dict.update(locals())
     exec(script, globals(), locals_dict)
@@ -159,7 +202,6 @@ def Safeexec(event, script, locals_dict):
 def Safemessage(event, text, attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
     print("running safemessage")
     bot.send_message(event.effective_chat.id, text)
-
 
 def process(event, context):
     global media_safelock
@@ -351,8 +393,68 @@ Parameter: {parameter}
 
         else:
             procmsg("not a command, skipping")
+            procmsg("triggering handlers")
+            if event.effective_message.text or event.message.caption:
+                text = ""
+                try:
+                    text = event.effective_message.text
+                    text_raw = event.effective_message.text
+                except:
+                    text = event.message.caption
+                    text_raw = event.message.caption
+                using = False
+                outputd = False
+                user_id = event.message.from_user.id
+                peer_id = event.message.chat.id
+                print(event.effective_message.text)
+                procmsg(vars(event))
+                procmsg(handlers)
+                # Старт обработчиков по событию
+                for x in handlers:
+                    try:
+                        Output(f"""
+    =================================
+    Triggering handler - {x}!
+                        """)
+                        print(f"{HANDLERSDIR}{hdl_ids[handlers.index(x)]}/{hdl_ids[handlers.index(x)]}.json")
+                        code_js = convertjson(
+                            ReadFF(f"{HANDLERSDIR}{hdl_ids[handlers.index(x)]}/{hdl_ids[handlers.index(x)]}.json"))
+                        author = code_js["author"]
+                        mode = code_js["mode"]
+                        identificator = code_js["identificator"]
+                        command_ru = code_js["identificator"]
+                        description = code_js["description"]
+                        if not code_js["restricted"]:
+                            code = ReadFF(f"{HANDLERSDIR}{hdl_ids[handlers.index(x)]}/{hdl_ids[handlers.index(x)]}.py")
+                            procmsg("Handler starting...")
+                            if not code_js["testing"]:
+                                print("executing safeexec")
+                                Safeexec(event, code, locals())
+                        else:
+                            if str(user_id) not in ReadFF("usr/restricted.txt").split(","):
+                                procmsg("not responding - restricted handler")
+                            else:
+                                try:
+                                    code = ReadFF(
+                                        f"{HANDLERSDIR}{hdl_ids[handlers.index(x)]}/{hdl_ids[handlers.index(x)]}.py")
+                                    if not code_js["testing"]:
+                                        Safeexec(event, code, locals())
+                                    else:
+                                        if isTester(user_id):
+                                            Safeexec(event, code, locals())
+                                except Exception as e:
+                                    print(e)
+                                    print(e.with_traceback(e.__traceback__))
+                                    procmsg("could not run handler for this event")
+                                    fail()
+                    except Exception as e:
+                        print(e)
+                        print(e.__traceback__)
+
     else:
         procmsg("not a message, skipping")
+
+
     # lastid = event.update_id
     # writeTo(event.update_id, "lastid.txt")
     # print(str(event.update_id) + " written into lastid")

@@ -90,6 +90,7 @@ if __name__ == "__main__":
     httpServerThread = threading.Thread(target=start_server,  args=(8000, ), daemon=True)
     httpServerThread.start()
     sys_threads.append(httpServerThread)
+
 nickname_symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÑñ АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя,.-_0123456789"
 lo("Executing: getreportban()", type="Loader")
 getreportban()
@@ -119,6 +120,7 @@ lo("Detected OS: " + osname, type="Loader")
 procmsg("Preparing to kernel start...")
 authors = []
 commands = []
+handlers = []
 ids = []
 descs = []
 modes = []

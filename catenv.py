@@ -439,19 +439,6 @@ def getmention(uid, namecase="nom", nickname_if_possible=True):
             return f"[club{abs(uid)}|{getname(abs(uid))}]"
     else: return "пользователь"
 
-def getname(uid, namecase="nom", nickname_if_possible=True):
-    uid = getid(uid)
-    if not os.path.exists(f"users/{uid}/nick.txt") or not nickname_if_possible: # если нет никнейма или не нужен никнейм
-        if uid != None:
-            if not isgroup(uid):
-                unamee = vk.users.get(user_id=uid, name_case=namecase, lang=0)[0]
-                return unamee["first_name"] + " " + unamee["last_name"]
-            else:
-                return vk.groups.getById(group_id=uid)[0]["name"]
-        else: return "пользователь"
-    else:
-        return ReadFF(f"users/{uid}/nick.txt")
-
 def deunix(integer):
     return datetime.datetime.fromtimestamp(integer).strftime('%Y %m %d %H %M %S').split(" ")
 
