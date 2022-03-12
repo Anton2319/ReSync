@@ -1,6 +1,7 @@
 need_install = True
-install = ["psutil", "platform"]
+install = ["psutil", "platform", "re"]
 modules = [
+"import re",
 "import threading",
 "import platform",
 "import psutil",
