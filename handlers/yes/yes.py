@@ -4,7 +4,7 @@ mode = "="
 deps = 'None'
 description = 'Пизда'
 
-yestrue = True if len(re.findall(r"[дДdD][AАаа]*[^\wБ-Яб-яёЁ]{0,1}$", text.split("\n")[-1])) == 1 else False
+yestrue = True if re.findall(r"\b[дДdD][AАаа]+[^\wБ-Яб-яёЁ]*$\Z", text) else False
 if yestrue:
     print("yestruecorrect")
     message("Пизда")
