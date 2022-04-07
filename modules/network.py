@@ -1,6 +1,8 @@
 need_install = True
 install = [
+"python-teleram-bot",
 "vk_api",
+"python-telegram-bot",
 "requests",
 "wikipedia",
 "wget",
@@ -12,6 +14,11 @@ install = [
 "yandex_music"
 ]
 modules = [
+"import http.server",
+"import socketserver",
+"import telegram",
+"from telegram.ext import Updater, CommandHandler",
+"from telegram.ext import MessageHandler, Filters",
 "import vk_api",
 "import vk_api as api2",
 "from vk_api import VkUpload, VkApi",

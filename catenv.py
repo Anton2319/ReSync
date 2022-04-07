@@ -4,7 +4,6 @@
 #
 
 session_editable = 0
-
 #
 # Settings
 #
@@ -440,19 +439,6 @@ def getmention(uid, namecase="nom", nickname_if_possible=True):
             return f"[club{abs(uid)}|{getname(abs(uid))}]"
     else: return "пользователь"
 
-def getname(uid, namecase="nom", nickname_if_possible=True):
-    uid = getid(uid)
-    if not os.path.exists(f"users/{uid}/nick.txt") or not nickname_if_possible: # если нет никнейма или не нужен никнейм
-        if uid != None:
-            if not isgroup(uid):
-                unamee = vk.users.get(user_id=uid, name_case=namecase, lang=0)[0]
-                return unamee["first_name"] + " " + unamee["last_name"]
-            else:
-                return vk.groups.getById(group_id=uid)[0]["name"]
-        else: return "пользователь"
-    else:
-        return ReadFF(f"users/{uid}/nick.txt")
-
 def deunix(integer):
     return datetime.datetime.fromtimestamp(integer).strftime('%Y %m %d %H %M %S').split(" ")
 
@@ -671,6 +657,8 @@ def RandomLetter():
     letters = ['q', 'Q', 'w', 'W', 'e', 'E', 'r', 'R', 't', 'T', 'y', 'Y', 'u', 'U', 'i', 'I', 'o', 'O', 'p', 'P', 'a', 'A', 's', 'S', 'd', 'D', 'f', 'F', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'z', 'Z', 'x', 'X', 'c', 'C', 'v', 'V', 'b', 'B', 'n', 'N', 'm', 'M', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     return randd.choice(letters)
 
+
+
 # def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
 #     mta(text)
     # text = str(text).replace("vto.pe", '').replace("vkbot.ru", '')
@@ -722,34 +710,21 @@ def mta(text,dont_parse=1):
     except Exception as e:
         FailMsg('Не удалось вызвать MTA: ' + str(e))
 
-def picture(text, text2):
-    pic = str(text)
-    message("Loading...")
-    try:
-        try:
-            upload = VkUpload(vk_session)
-            image_url = pic
-            image = session.get(image_url, stream=True)
-            photo = upload.photo_messages(photos=image.raw)[0]
-            message(text2, attachment=f"photo{photo['owner_id']}_{photo['id']}", reply=True)
-        except:
-            message(text2, reply=True)
-    except:
-        #mta(e)
-        pass
-
-def picturedata(text, text2):
-    pic = str(text)
-    message("Loading...")
-    try:
-        try:
-            upload = VkUpload(vk_session)
-            photo = upload.photo_messages(photos=text)[0]
-            message(text2, attachment=f"photo{photo['owner_id']}_{photo['id']}", reply=True)
-        except Exception as e:
-            message(text2 + '\n///' + str(e) + '///', reply=True)
-    except Exception as e:
-        message('picture error: ' + str(e), reply=True)
+# def picture(text, text2):
+#     pic = str(text)
+#     message("Loading...")
+#     try:
+#         try:
+#             upload = VkUpload(vk_session)
+#             image_url = pic
+#             image = session.get(image_url, stream=True)
+#             photo = upload.photo_messages(photos=image.raw)[0]
+#             message(text2, attachment=f"photo{photo['owner_id']}_{photo['id']}", reply=True)
+#         except:
+#             message(text2, reply=True)
+#     except:
+#         #mta(e)
+#         pass
 
 def document(path, text):
     try:

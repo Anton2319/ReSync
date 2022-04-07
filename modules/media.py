@@ -14,7 +14,8 @@ install = [
 "markovify",
 "numpy",
 "pytesseract",
-"pillow"
+"pillow",
+"imghdr",
 ]
 modules = [
 "import webcolors",
@@ -33,7 +34,8 @@ modules = [
 "import markovify",
 "import numpy as np",
 "import pytesseract",
-"from PIL import Image, ImageDraw, ImageFont, ImageFilter"
+"from PIL import Image, ImageDraw, ImageFont, ImageFilter",
+"import imghdr"
 ]
 script = """
 zalgofy = zalgo().zalgofy

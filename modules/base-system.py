@@ -1,6 +1,10 @@
-need_install = False
-install = []
+need_install = True
+install = ["psutil", "platform", "re"]
 modules = [
+"import re",
+"import threading",
+"import platform",
+"import psutil",
 "import binascii",
 "from math import ceil",
 "import textwrap",

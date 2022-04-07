@@ -6,21 +6,27 @@
 #
 # CatOS FastStart Boot
 #
-
-import sys, os, psutil
-import telegram
-from telegram.ext import Updater, CommandHandler
-from telegram.ext import MessageHandler, Filters
-
+import sys, os
+import threading
 import catenv
+
+def get_base_prefix_compat():
+    """Get base/real prefix, or sys.prefix if there is none."""
+    return getattr(sys, "base_prefix", None) or getattr(sys, "real_prefix", None) or sys.prefix
+
+def in_virtualenv():
+    return get_base_prefix_compat() != sys.prefix
+
 
 Ff = open("catenv.py", 'r', encoding='UTF-8')
 __catenv__ = Ff.read()
 exec(__catenv__)
 Ff.close()
 del Ff
-
 lo("CatENV successfully started", type="Loader")
+global threads
+global sys_threads
+
 #lo("", type="Loader")
 
 Output(ReadFF("usr/distro.txt"))
@@ -43,7 +49,11 @@ for x in os.listdir("modules"):
             Output(" [!] The " + x[:-3] + " modules set is invalid. Log will write into file modulesinstall.txt. Starting of modules setup...")
             for z in install:
                 procmsg("Installing " + z)
-                os.system(sys.executable + " -m pip install --user " + z + " >> modulesinstall.txt")
+                if in_virtualenv():
+                    procmsg("Running inside virtualenv, performing nonuser install")
+                    os.system("\"" + sys.executable + " \"" + " -m pip install " + z + " >> modulesinstall.txt")
+                else:
+                    os.system("\"" + sys.executable + " \"" + " -m pip install --user " + z + " >> modulesinstall.txt")
                 succ()
             try:
                 exec(y)
@@ -64,6 +74,22 @@ for x in os.listdir("configs/"):
     procmsg("Loading configuration - " + x[:-3])
     exec(str(catenv.ReadFF("configs/" + x)))
     succ()
+
+# запуск локального сервера для ввозможности скачивания медиа
+def start_server(port):
+    procmsg("Initializing HTTP handler")
+    Handler = http.server.SimpleHTTPRequestHandler
+    httpd = socketserver.TCPServer(("", port), Handler)
+    procmsg("Starting server at port "+str(port))
+    httpd.serve_forever()
+    succ()
+
+if __name__ == "__main__":
+    global sys_threads
+    sys_threads = list()
+    httpServerThread = threading.Thread(target=start_server,  args=(8000, ), daemon=True)
+    httpServerThread.start()
+    sys_threads.append(httpServerThread)
 
 nickname_symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÑñ АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя,.-_0123456789"
 lo("Executing: getreportban()", type="Loader")
@@ -94,6 +120,7 @@ lo("Detected OS: " + osname, type="Loader")
 procmsg("Preparing to kernel start...")
 authors = []
 commands = []
+handlers = []
 ids = []
 descs = []
 modes = []
@@ -130,12 +157,26 @@ while startkernel:
 
 writeTo(admins, "admins.txt")
 mta("CatABMS is starting.")
+#блокировка обработки медиа в многопоточном режиме
+global media_safelock
+media_safelock = False
 #try:
     #mta(f'Запуск CatABMS {botname} {version} на ядре {core}...')
 exec(ReadFF("core.py"))
-message_handler = MessageHandler(None, process)
+
+def onMessage(event, context):
+    if __name__ == "__main__":
+        global threads
+        threads = list()
+        processServerThread = threading.Thread(target=process, args=(event,context, ), daemon=True)
+        processServerThread.start()
+        threads.append(processServerThread)
+
+procmsg("core launched, starting polling")
+message_handler = MessageHandler(None, onMessage)
 dispatcher.add_handler(message_handler)
 updater.start_polling()
+succ()
 #except Exception as e:
         #Output('Kernel panic: ' + str(e))
 #except KeyboardInterrupt:
