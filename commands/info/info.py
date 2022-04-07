@@ -11,7 +11,7 @@ if only_admins:
 else:
     addition = ""
 
-message(f'''Catware CatPy {version} Stable (от {releasedate})
+message(f'''Catware Forkpy {version} Development (от {releasedate})
 Codename: {codename}
 Работает под управлением {abms_name} {addition}
 Интерпретатор: Python {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro} {sys.version_info.releaselevel.capitalize()} на ОС {osname}
@@ -25,6 +25,6 @@ Codename: {codename}
 Примерное кол-во бесед: {str(len(os.listdir('chats')))}
 
 Информация о разработчиках:
-Разработчики - @catweird2 и @theagrik
+Разработчики - @catweird2, @theagrik, @infinitewanderer
 Домашняя страница - www.ctwre.ru
 Catware Wiki - wiki.ctwre.ru''', disable_mentions=1, reply=True)

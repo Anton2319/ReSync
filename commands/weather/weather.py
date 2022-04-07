@@ -1,4 +1,6 @@
 # CatOS-Type Package
+import time
+
 author = "catwared, aGrIk"
 mode = "="
 deps = 'None'
@@ -8,6 +10,7 @@ description = 'Поиск прогноза погоды для населенн�
 
 weather_tm = time.time()
 e_exists = False
+
 
 try:
     if parameter == "":
@@ -29,6 +32,7 @@ try:
     yura = convertjson(Get(f"https://api.openweathermap.org/data/2.5/weather?lat={geo[0]}&lang=ru&lon={geo[1]}&appid={owm_token}&units=metric"))
     ivan = convertjson(Get(f"https://api.openweathermap.org/data/2.5/forecast?lat={geo[0]}&lang=ru&lon={geo[1]}&units=metric&appid={owm_token}"))
     suninfo = ssorg(geo[0], geo[1])
+    print(suninfo)
 
 
     def gwd(deg):
@@ -64,8 +68,8 @@ try:
     timezone = suninfo[10]
     sunrise = suninfo[0]
     sunset = suninfo[1]
+    global currtime
     currtime = time.time() + timezone
-
 
     def emoji(id):
         cases = {
@@ -128,6 +132,7 @@ try:
         return cases.get(id, None)
 
     def moon():
+        global currtime
         mn = astr_moon.phase(datetime.datetime.fromtimestamp(currtime).date())
         if mn < 3.5:
             return "🌑 Новолуние"
@@ -187,7 +192,7 @@ try:
 {moon()}
 
 Погода по часам:
-    """
+"""
 
     for count in forecast:
         weather_res += f'{emoji(count["weather"][0]["id"])} {readableDate(count["dt"] + timezone, False, False)} - {count["weather"][0]["description"].capitalize()}: {round(count["main"]["temp"], 1)}°C, {round(count["wind"]["speed"], 1)} м/с, {count["wind"]["deg"]}° ({gwd(count["wind"]["deg"])})\n'
@@ -197,10 +202,10 @@ except Exception as e:
     weather_res = """По вашему запросу ничего не было найдено.
 
     Проверьте, корректно ли указано место, либо есть ли у вас в профиле какой-либо населённый пункт."""
-    print(e.with_traceback())
     e_exists = True
     global exc
     exc = str(e)
+    print(e)
 if user_id == 242722587:
     weather_res += f"\n\nОтладочная информация: \nВремя ответа: {time.time() - weather_tm}\nПараметр: \"{parameter}\""
     if e_exists: weather_res += f"Exception: {exc}\n"

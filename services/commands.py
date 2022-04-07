@@ -82,10 +82,10 @@ for x in os.listdir("commands"):
 
 htmlcode += HTML_END
 
-try:
-    writeTo(htmlcode, "/home/catpy/server/commands.html")
-except:
-    pass
+# try:
+#     writeTo(htmlcode, "/home/catpy/server/commands.html")
+# except Exception as e:
+#     print(e)
 
 writeTo("Команды бота\n\n" + "\n\n".join(listd), "default_commands.txt")
 writeTo("Отключённые команды бота\n\n" + "\n\n".join(disable_listd), "disable_commands.txt")
