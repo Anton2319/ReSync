@@ -103,12 +103,12 @@ gettroll()
 dons = convertjson(ReadFF("json/dons.json"))["dons"]
 
 lo("Detecting OS", type="Loader")
-if os.name == 'nt':
-    osname = 'Windows NT'
-if os.name == 'posix':
+if platform.system() == 'Windows':
+    osname = 'Microsoft Windows NT'
+if platform.system() == 'Linux':
     osname = 'GNU/Linux'
-if os.name == 'mac':
-    osname = 'Mac OS'
+if platform.system() == 'Darwin':
+    osname = 'Apple Mac OS'
 if os.name == 'os2':
     osname = 'OS/2 Warp'
 if os.name == 'ce':
