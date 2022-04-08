@@ -32,7 +32,6 @@ try:
     yura = convertjson(Get(f"https://api.openweathermap.org/data/2.5/weather?lat={geo[0]}&lang=ru&lon={geo[1]}&appid={owm_token}&units=metric"))
     ivan = convertjson(Get(f"https://api.openweathermap.org/data/2.5/forecast?lat={geo[0]}&lang=ru&lon={geo[1]}&units=metric&appid={owm_token}"))
     suninfo = ssorg(geo[0], geo[1])
-    print(suninfo)
 
 
     def gwd(deg):
