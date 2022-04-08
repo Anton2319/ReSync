@@ -6,7 +6,6 @@ identificator = 'help'
 command_ru = 'помощь'
 description = 'Помощь с catpy'
 
-print("Hello world!")
 message("""На связи catpy - самый полезный чат-бот ВКонтакте!
 
 Мои команды: /команды
