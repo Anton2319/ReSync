@@ -8,3 +8,4 @@ yestrue = True if re.findall(r"\b[дДdD][AАаа]+[^\wБ-Яб-яёЁ]*$\Z", tex
 if yestrue:
     print("yestruecorrect")
     message("Пизда")
+#restricted
