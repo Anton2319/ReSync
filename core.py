@@ -155,6 +155,12 @@ def Safeexec(event, script, locals_dict):
             bot.send_photo(event.effective_chat.id, photo=attachment)
     print("running safexec")
 
+    def alias(command):
+        try:
+            exec(ReadFF(f"{COMMANDSDIR}{command}/{command}.py"), globals(), locals_dict)
+        except TypeError:
+            raise Exception(f"Alias задан некорректно в команде {identificator}")
+
     def picturedata(path, text):
         pic = str(path)
         message("Loading...")
