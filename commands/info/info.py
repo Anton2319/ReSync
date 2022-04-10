@@ -26,5 +26,5 @@ Codename: {codename}
 
 Информация о разработчиках:
 Разработчики - t.me/catweird2, t.me/theagrik, t.me/infinitewanderer
-Домашняя страница - www.ctwre.ru
+Домашняя страница - ctwre.ru
 Catware Wiki - wiki.ctwre.ru''', disable_mentions=1, reply=True)

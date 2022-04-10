@@ -657,7 +657,11 @@ def RandomLetter():
     letters = ['q', 'Q', 'w', 'W', 'e', 'E', 'r', 'R', 't', 'T', 'y', 'Y', 'u', 'U', 'i', 'I', 'o', 'O', 'p', 'P', 'a', 'A', 's', 'S', 'd', 'D', 'f', 'F', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'z', 'Z', 'x', 'X', 'c', 'C', 'v', 'V', 'b', 'B', 'n', 'N', 'm', 'M', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     return randd.choice(letters)
 
+def getProfilePic(user_id):
+    bot.getUserProfilePhotos(user_id, offset=None, limit=100, timeout=None, api_kwargs=None)
 
+def getUsername(event):
+    return event.message.from_user
 
 # def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
 #     mta(text)
@@ -705,8 +709,8 @@ def sexmessage(male, female, user_id, dont_parse=1):
 
 def mta(text,dont_parse=1):
     try:
-        bot.send_message(admins[0], text)
-        bot.send_message(admins[1], text)
+        for id in admins:
+            bot.send_message(id, text)
     except Exception as e:
         FailMsg('Не удалось вызвать MTA: ' + str(e))
 
