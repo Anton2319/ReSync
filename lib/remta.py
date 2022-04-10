@@ -29,5 +29,6 @@ def mtapicture(URL, text):
         except Exception:
             message(str(text))
     except Exception as e:
-        #mta(e)
+        mta("Не удалось отправить репорт через reMTA: " + str(e))
+        mta(text)
         pass
