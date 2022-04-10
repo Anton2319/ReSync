@@ -29,7 +29,7 @@ if text == "":
     text = "*молчит*"
 
 if ReadFF("argv_picture.txt") == "none":
-    ava = vk.users.get(user_ids=uid, fields="photo_max_orig")[0]["photo_max_orig"]
+    ava = getUserProfilePhotos(user_id)
 else:
     ava = ReadFF("argv_picture.txt")
 name = vk.users.get(user_ids=uid)[0]
