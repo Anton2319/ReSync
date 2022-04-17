@@ -108,7 +108,7 @@ if platform.system() == 'Windows':
 if platform.system() == 'Linux':
     osname = 'GNU/Linux'
 if platform.system() == 'Darwin':
-    osname = 'Apple Mac OS'
+    osname = 'Apple MacOS'
 if os.name == 'os2':
     osname = 'OS/2 Warp'
 if os.name == 'ce':

@@ -5,7 +5,7 @@
 # Written Specially for report command.
 #
 
-def mtapicture(URL, text):
+def mtapicture(URL, text, markdown):
     random_id = randd.randint(-2147483647, 2147483647)
     pic = str(URL)
     #message("Loading...") <- Как же за##ало это сообщение...
@@ -30,5 +30,5 @@ def mtapicture(URL, text):
             message(str(text))
     except Exception as e:
         mta("Не удалось отправить репорт через reMTA: " + str(e))
-        mta(text)
+        mta(text,markdown)
         pass

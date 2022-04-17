@@ -431,13 +431,11 @@ def getid(sname):
         return None
 
 def getmention(uid, namecase="nom", nickname_if_possible=True):
-    uid = getid(uid)
+    #uid = getid(uid) obsolete
     if uid != None:
         if not isgroup(uid):
-            return f"[id{uid}|{getname(uid, namecase, nickname_if_possible)}]"
-        else:
-            return f"[club{abs(uid)}|{getname(abs(uid))}]"
-    else: return "пользователь"
+            return f"[пользователь](tg://user?id={uid})"
+    else: return f"не удалось определить пользователя по ID {uid}"
 
 def deunix(integer):
     return datetime.datetime.fromtimestamp(integer).strftime('%Y %m %d %H %M %S').split(" ")
@@ -707,10 +705,15 @@ def sexmessage(male, female, user_id, dont_parse=1):
     else:
         messagecust(male, user_id, dont_parse=dont_parse)
 
-def mta(text,dont_parse=1):
+def mta(text,markdown=False,dont_parse=1):
+    print("Sending MTA")
     try:
         for id in admins:
-            bot.send_message(id, text)
+            if markdown:
+                print("Markdown is true")
+                bot.send_message(id, text, parse_mode="Markdown")
+            else:
+                bot.send_message(id, text)
     except Exception as e:
         FailMsg('Не удалось вызвать MTA: ' + str(e))
 

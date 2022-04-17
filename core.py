@@ -145,12 +145,20 @@ writeTo(time.time(), "start-time.txt")
 
 
 def Safeexec(event, script, locals_dict):
-    def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
+    def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True, markdown=False):
         if attachment is None or attachment is "":
             print("sending message")
-            bot.send_message(event.effective_chat.id, text)
+            if markdown:
+                print("markdown is true")
+                bot.send_message(event.effective_chat.id, text, parse_mode="Markdown")
+            else:
+                bot.send_message(event.effective_chat.id, text)
         else:
-            bot.send_message(event.effective_chat.id, text)
+            if markdown:
+                print("markdown is true")
+                bot.send_message(event.effective_chat.id, text, parse_mode="Markdown")
+            else:
+                bot.send_message(event.effective_chat.id, text)
             procmsg("Sending attachment")
             bot.send_photo(event.effective_chat.id, photo=attachment)
     print("running safexec")

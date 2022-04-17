@@ -14,11 +14,12 @@ if user_id not in reportbanned:
     else:
         additional = ""
     if ReadFF("argv_picture.txt") != "none":
-        mtapicture(ReadFF("argv_picture.txt"), f'Новый репорт\nЧат: {peer_id}\nОтправитель: {getmention(user_id)} {additional}\nТекст сообщения: {parameter}')
+        mtapicture(ReadFF("argv_picture.txt"), f'Новый репорт\nЧат: {peer_id}\nОтправитель: {getmention(user_id)} {additional}\nТекст сообщения: {parameter}', markdown=True)
         message('Репорт успешно отправлен!', reply=True)
     # И если она не прикреплена
     else:
-        mta(f'Новый репорт\nЧат: {peer_id}\nОтправитель: {getmention(user_id)} {additional}\nТекст сообщения: {parameter}')
+        print("here")
+        mta(f'Новый репорт\nЧат: {peer_id}\nОтправитель: {getmention(user_id)} {additional}\nТекст сообщения: {parameter}', markdown=True)
         message('Репорт успешно отправлен', reply=True)
 else:
     message("Вам заблокирована возможность репорта.", reply=True)
