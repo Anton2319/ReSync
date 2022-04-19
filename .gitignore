@@ -6,3 +6,5 @@ usr/bread.txt
 .idea
 .idea/
 .idea/*
+/commandslog.txt
+/start-time.txt

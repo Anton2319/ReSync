@@ -1,1 +1,2 @@
 owm_token = "9791a8f069c0fc169fea52785210dbf0"
+youtubeDataApi_token="AIzaSyCzYCCpOWOozwbXZiJF-ba4o1TyaIhRDQ8"
