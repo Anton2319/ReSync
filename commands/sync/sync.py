@@ -16,7 +16,11 @@ for x in ReadFF("usr/syncronized.txt").split("\n"):
 def pageProcess(pageToken):
     global playlistID
     global uploaded_content
-    payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails", "pageToken": pageToken}
+    if pageToken is None:
+        payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails"}
+    else:
+        payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails",
+                   "pageToken": pageToken}
     headers = {'content-type': 'application/json'}
     r = requests.get('https://youtube.googleapis.com/youtube/v3/playlistItems', params=payload, headers=headers)
     json_data = r.json()
@@ -34,10 +38,18 @@ payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlis
 headers = {'content-type': 'application/json'}
 r = requests.get('https://youtube.googleapis.com/youtube/v3/playlistItems', params=payload, headers=headers)
 json_data = r.json()
-payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails", "pageToken": json_data["nextPageToken"]}
+payload = {}
+try:
+    payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails", "pageToken": json_data["nextPageToken"]}
+except:
+    payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails"}
+
 r = requests.get('https://youtube.googleapis.com/youtube/v3/playlistItems', params=payload, headers=headers)
 json_data = r.json()
-pageToken = json_data["prevPageToken"]
+try:
+    pageToken = json_data["prevPageToken"]
+except:
+    pageToken = None
 i = 0
 
 while math.ceil((json_data["pageInfo"]["totalResults"] / json_data["pageInfo"]["resultsPerPage"])) > i:
@@ -49,8 +61,12 @@ while math.ceil((json_data["pageInfo"]["totalResults"] / json_data["pageInfo"]["
         json_data["nextPageToken"]
     except:
         break
-    if json_data["nextPageToken"]:
-        pageToken = json_data["nextPageToken"]
+    try:
+        if json_data["nextPageToken"]:
+            pageToken = json_data["nextPageToken"]
+
+    except:
+        break
     i = i+1
 
 print("done")
