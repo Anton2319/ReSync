@@ -50,7 +50,7 @@ def FAA_save():
         log("[FAA_save] Writing: " + file)
         writeTo(gv("files")[file], file, enable_FAA=False)
 
-def ReadFF(file, enable_FAA=enable_FAA): # Read From File
+def ReadFF(file, enable_FAA=False): # Read From File
     if enable_FAA:
         if file not in gv("files"):
             Ff = open(file, 'r', encoding='UTF-8')

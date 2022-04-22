@@ -1,1 +1,0 @@
-{"author": "aGrIk", "mode": "=", "deps": "None", "identificator": "listadmin", "command_ru": "списокадминов", "description": "Выводит список администрации бота", "testing": false, "hide": true, "restricted": false, "disabled": false}

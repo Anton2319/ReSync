@@ -1,1 +1,0 @@
-{"author": "catwared", "mode": "start", "deps": "None", "identificator": "console", "command_ru": "exec", "description": "Консоль [только для администраторов]", "testing": false, "hide": true, "restricted": false, "disabled": false}

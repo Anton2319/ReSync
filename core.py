@@ -5,15 +5,17 @@ import token
 from requests import get
 from telegram.ext import Updater, MessageHandler
 
+print("Kernel running!")
+
 Output("CatABMS Kernel version " + core + " startup...")
 lastid = None
-lo("Loading library: detectfull", type="Kernel Loader")
-exec(ReadFF("lib/detectfull.py"))
-#exec(ReadFF("lib/surrogate-manager.py"))
-lo("Loading library: CUMv2", type="Kernel Loader")
-exec(ReadFF("lib/CUMv2.py"))
-lo("Loading library: generrorcode", type="Kernel Loader")
-exec(ReadFF('lib/generrorcode.py'))
+# lo("Loading library: detectfull", type="Kernel Loader")
+# exec(ReadFF("lib/detectfull.py"))
+# #exec(ReadFF("lib/surrogate-manager.py"))
+# lo("Loading library: CUMv2", type="Kernel Loader")
+# exec(ReadFF("lib/CUMv2.py"))
+# lo("Loading library: generrorcode", type="Kernel Loader")
+# exec(ReadFF('lib/generrorcode.py'))
 
 lo("Starting of legacy logger...", type="Kernel Loader")
 system_errors = ""
@@ -145,6 +147,10 @@ writeTo(time.time(), "start-time.txt")
 
 
 def Safeexec(event, script, locals_dict):
+    global sendvideo
+    def sendvideo(attachment, caption):
+        bot.send_video(event.effective_chat.id, video=attachment, caption=caption)
+
     def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True, markdown=False):
         if attachment is None or attachment is "":
             print("sending message")
@@ -175,7 +181,7 @@ def Safeexec(event, script, locals_dict):
         try:
             try:
                 print("Adding attachment")
-                message(text, attachment=open(path, 'rb').read(), reply=True)
+                message(text, attachment=open(path, 'r').read(), reply=True)
                 succ()
             except Exception as e:
                 message(text + '\n///' + str(e) + '///', reply=True)
@@ -212,6 +218,8 @@ def Safeexec(event, script, locals_dict):
     exec(ReadFF("catenv.py"), globals(), locals_dict)
     locals_dict.update(locals())
     exec(script, globals(), locals_dict)
+
+
 
 def Safemessage(event, text, attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True):
     print("running safemessage")

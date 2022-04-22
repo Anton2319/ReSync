@@ -9,6 +9,7 @@
 import sys, os
 import threading
 import catenv
+import telegram
 
 def get_base_prefix_compat():
     """Get base/real prefix, or sys.prefix if there is none."""
@@ -138,7 +139,7 @@ while startkernel:
         # longpoll = VkBotLongPoll(vk_session, gid)
         # vk = vk_session.get_api()
         # keyboard = VkKeyboard(one_time=False)
-        bot = telegram.Bot(token=token)
+        bot = telegram.Bot(token=token, base_url="http://192.168.0.106:8081/bot")
         procmsg(bot.get_me())
         updater = Updater(token=token, use_context=True)
         dispatcher = updater.dispatcher
