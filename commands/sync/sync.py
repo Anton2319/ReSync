@@ -1,4 +1,5 @@
 import math
+import traceback
 from pprint import pprint
 
 import numpy
@@ -36,9 +37,15 @@ def pageProcess(pageToken):
                     "videoId"])
                 os.system('rm download.mp4')
                 PlusWrite('https://youtube.com/watch?v='+video["contentDetails"]["videoId"]+'\n', "usr/syncronized.txt")
-            except:
+            except Exception as e:
+                message("Не удалось синхронизировать: "+str(e))
+                print(e)
+                my_traceback = "".join(traceback.format_exception(etype=None, value=e, tb=e.__traceback__))
+                traceback.print_exception(etype=None, value=e, tb=e.__traceback__)
+                print(my_traceback)
                 print("well yeah")
-
+        else:
+            print("syncronized already")
 pageToken = ""
 payload = {"key": youtubeDataApi_token, "maxResults": "5", "playlistId": playlistID, "part": "contentDetails"}
 headers = {'content-type': 'application/json'}
