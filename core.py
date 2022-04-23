@@ -150,7 +150,7 @@ def Safeexec(event, script, locals_dict):
     global sendvideo
     global message
     def sendvideo(attachment, caption):
-        bot.send_video(event.effective_chat.id, video=attachment, caption=caption, timeout=2100)
+        bot.send_video(event.effective_chat.id, video=attachment, caption=caption, supports_streaming=True, timeout=2100)
 
     def message(text="", attachment="", keyboard="", intent="default", disable_mentions=1, dont_parse=1, reply=True, markdown=False):
         if attachment is None or attachment is "":
